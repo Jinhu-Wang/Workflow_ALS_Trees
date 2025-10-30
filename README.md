@@ -67,7 +67,7 @@ This module clips the LiDAR point clouds in LAS/LAS format w.r.t. the polygons (
 
 There are three parameters to specify:
 
-    ```javascript
+    ```javascript {.line-numbers}
     std::string shp_file_path:  The full path to the shapefile.
     std::string in_las_dir:     The full path to the directory of LAS/LAZ files.
     std::string out_las_dir:    The full path to the output directory of lipped LAS/LAZ files.

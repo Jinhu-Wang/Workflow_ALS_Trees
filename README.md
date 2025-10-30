@@ -65,9 +65,8 @@ To use the scripts, a `C++` compiler, i.e. `g++`,`gcc`, `mscv`, `clang++`, etc.,
 
 This module clips the LiDAR point clouds in LAS/LAS format w.r.t. the polygons (with *.shp format).
 
-    - There are three parameters to specify:
-
-    ```    
+There are three parameters to specify:
+    ```
     std::string shp_file_path:  The full path to the shapefile.
     std::string in_las_dir:     The full path to the directory of LAS/LAZ files.
     std::string out_las_dir:    The full path to the output directory of lipped LAS/LAZ files.

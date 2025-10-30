@@ -1,6 +1,6 @@
 # Workflow_ALS_Trees
-Workflow modules related to tree individualization using ALS point clouds.
 
+Workflow modules related to tree individualization using ALS point clouds.
 
 ## Table of Contents
 
@@ -11,11 +11,9 @@ Workflow modules related to tree individualization using ALS point clouds.
 - [License](#license)
 - [Contact](#contact)
 
-
 ## Overview
 
-This repository holds the modules for tree individualization from 3D point cloud datasets obtained by airborne laser scanning. 
-
+This repository holds the modules for tree individualization from 3D point cloud datasets obtained by airborne laser scanning.
 
 ## File Structure
 
@@ -38,26 +36,25 @@ project_directory/
          └── CMakeLists.txt               # Configuration using CMake tool
 ```
 
-
 ## Requirements
 
 The `C++` scripts in this repository depends on the **[LAStools](https://lastools.github.io/)** to read point cloud data in **LAS/LAZ** formats and the **[shapelib](http://shapelib.maptools.org/)** for reading **ESRI** shapefiles.
 
 To use the scripts, a `C++` compiler, i.e. `g++`,`gcc`, `mscv`, `clang++`, etc., should be installed.
 
-
 ## Usage Instructions
 
-### There are two ways to build:
+### There are two ways to build
 
 - Option 1: Using CMake to generate makefiles and then 'make' (on Linux/macOS).
 
   - On Linux or maxOS, simply:
+
     ```
-    $ cd path-to-dir
-    $ mkdir release  && cd release
-    $ cmake -DCMAKE_BUILD_TYPE=release ..
-    $ make
+    cd path-to-dir
+    mkdir release  && cd release
+    cmake -DCMAKE_BUILD_TYPE=release ..
+    make
     ```
 
 - Option 2: Use any IDE that can directly handle CMakeLists files to open the `CMakeLists.txt` in the **root** directory of Trees3D.
@@ -70,11 +67,11 @@ This module clips the LiDAR point clouds in LAS/LAS format w.r.t. the polygons (
 
 There are two parameters to specify:
 
-```
+    ```
     std::string shp_file_path:  The full path to the shapefile.
     std::string in_las_dir:     The full path to the directory of LAS/LAZ files.
     std::string out_las_dir:    The full path to the output directory of lipped LAS/LAZ files.
-```
+    ```
 
 ```javascript {.line-numbers}
 void usage(char *argv)
@@ -114,10 +111,9 @@ int main(int argc, char **argv)
 }
 ```
 
-
 ## License
 
-CC0-1.0 license 
+MIT License
 
 ## Contact
 

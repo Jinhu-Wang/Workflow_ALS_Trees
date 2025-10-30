@@ -50,12 +50,12 @@ To use the scripts, a `C++` compiler, i.e. `g++`,`gcc`, `mscv`, `clang++`, etc.,
 
   - On Linux or maxOS, simply:
 
-    ```
+```
     cd path-to-dir
     mkdir release  && cd release
     cmake -DCMAKE_BUILD_TYPE=release ..
     make
-    ```
+```
 
 - Option 2: Use any IDE that can directly handle CMakeLists files to open the `CMakeLists.txt` in the **root** directory of Trees3D.
   Then you should have obtained a usable project and just build it. I recommend using
@@ -67,7 +67,7 @@ This module clips the LiDAR point clouds in LAS/LAS format w.r.t. the polygons (
 
 There are three parameters to specify:
 
-```javascript {.line-numbers}
+```
     std::string shp_file_path:  The full path to the shapefile.
     std::string in_las_dir:     The full path to the directory of LAS/LAZ files.
     std::string out_las_dir:    The full path to the output directory of lipped LAS/LAZ files.
